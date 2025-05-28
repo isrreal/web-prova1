@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+<style>
+    .imagem {
+        display: flex;
+        justify-content: center;
+    }
+    .botoes {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<script>
+    function adianta_url() {
+            let tag_img = document.getElementById("pokemon");
+            let index = 0;
+            tag_img.setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/`${index + 1}`.svg")
+    }
+
+    function volta_url() {
+            let tag_img = document.getElementById("pokemon"); 
+            let index = 0;
+            tag_img.setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/`${index - 1}`.svg")
+    }
+</script>
+
+</head>
+<body>
+    <div class="imagem">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" id="pokemon">
+    </div>
+    <div class="botoes"> 
+        <button onclick="volta_url()"> Voltar -1 </button>
+        <button onclick="adianta_url()"> Adiantar +1 </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+<style>
+header#cabecalho {
+    display: flex;
+    justify-content: center;  
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.principal #menu-lateral {
+    padding-right: 20px; 
+    justify-content: flex-start;
+    background-color: gray;
+}
+
+#menu-lateral ul {
+    list-style-type: none;
+}
+
+.principal #conteudo {
+    padding: 20px; 
+    justify-content: flex-start;
+    background-color: tomato;
+}
+
+.meu-footer footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.meu-footer footer p {
+    font-style: italic;
+}
+
+@media only screen and (max-width: 400px) {
+   .principal #menu-lateral {grid-area: 1 / span 2;}
+}
+</style>
+
+</head>
+<body>
+    <header id="cabecalho">
+        <h1> Desenvolvimento de Software para WEB </h1>
+    </header>
+    
+    <div class="principal">
+        <div id="menu-lateral">
+            <ul>
+                <li> Link 1 </li>
+                <li> Link 2 </li>
+                <li> Link 3 </li>
+                <li> Link 4 </li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            [Conteúdo] 
+            <h3> Introdução ao HTML </h3>
+
+            <article> 
+                <p> Ipsum Lorem… </p>
+                <img src="https://imgs.search.brave.com/5xF7YZYnU3BzL_hWmbU4yF39dFrX_fm4ItlFv0FrPCk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS12/ZWN0b3Ivcm9tYW4t/ZW1waXJlLWdyZWF0/ZXN0LWV4dGVudC0x/MTctMjYwbnctMjAz/NTg5NTQ0LmpwZw">
+
+                <p> Ipsum Lorem… </p>
+                <img src="https://imgs.search.brave.com/5xF7YZYnU3BzL_hWmbU4yF39dFrX_fm4ItlFv0FrPCk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS12/ZWN0b3Ivcm9tYW4t/ZW1waXJlLWdyZWF0/ZXN0LWV4dGVudC0x/MTctMjYwbnctMjAz/NTg5NTQ0LmpwZw">
+            </article>
+
+        </div>
+    </div>
+    <div class="meu-footer">
+       <footer>
+           <p> israelflinstons@alu.ufc.br </p>
+           <p> 2025.1 </p>
+           <p> Todos os direitos reservados </p>
+
+       </footer>
+    </div>
+</body>
+</html>
