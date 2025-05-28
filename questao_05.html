@@ -24,7 +24,19 @@
     justify-content: flex-end;
 }
 
+.notification-card  .card-header .close-btn:active {
+    display: none;
+}
+
 </style>
+<script>
+    function func() {
+        document.getElementByClass("notification-card").innerHTML = "style: 
+                    .notification-card {
+                        display: none;
+                    } "
+    }
+</script>
 </head>
 <body>
     <h1>Conteúdo da Página para Rolagem</h1>
@@ -42,7 +54,7 @@
 
     <div class="notification-card">
         <div class="card-header">
-            <button class="close-btn">X</button>
+            <button class="close-btn" onclick="func()">X</button>
         </div>
 
         <div class="card-content">
